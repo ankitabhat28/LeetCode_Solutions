@@ -7,8 +7,7 @@ class Solution {
         while (end < n) {
             char c = s.charAt(end);
             if (!set.contains(c)) {
-                set.add(c);
-                maxLength = Math.max(maxLength, end - start + 1);
+                set.add(c);                maxLength = Math.max(maxLength, end - start + 1);
                 end++;
             } else {
                 set.remove(s.charAt(start));
